@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cleaner"
+        android:title="@string/cleaner"/>
+    <item
+        android:id="@+id/defeatist"
+        android:title="@string/defeatist"/>
+    <item
+        android:id="@+id/fumbler"
+        android:title="@string/fumbler"/>
+    <item
+        android:id="@+id/humanist"
+        android:title="@string/humanist"/>
+    <item
+        android:id="@+id/invulnerable"
+        android:title="@string/invulnerable"/>
+    <item
+        android:id="@+id/irresistible"
+        android:title="@string/irresistible"/>
+    <item
+        android:id="@+id/sloth"
+        android:title="@string/sloth"/>
+    <item
+        android:id="@+id/sniper"
+        android:title="@string/sniper"/>
+    <item
+        android:id="@+id/stormtrooper"
+        android:title="@string/stormtrooper"/>
+    <item
+        android:id="@+id/victim"
+        android:title="@string/victim"/>
+
+</menu>

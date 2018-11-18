@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestForpost</string>
+    <string name="desk_title">DESK</string>
+    <string name="table_title">TABLE</string>
+    <string name="teams_title">TEAMS</string>
+    <string name="cleaner">Cleaner</string>
+    <string name="defeatist">Defeatist</string>
+    <string name="fumbler">Fumbler</string>
+    <string name="humanist">Humanist</string>
+    <string name="invulnerable">Invulnerable</string>
+    <string name="irresistible">Irresistible</string>
+    <string name="sloth">Sloth</string>
+    <string name="sniper">Sniper</string>
+    <string name="stormtrooper">Stormtrooper</string>
+    <string name="victim">Victim</string>
+    <string name="details">Details</string>
+</resources>
