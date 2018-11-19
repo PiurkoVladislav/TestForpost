@@ -10,34 +10,31 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FragmentDesk extends Fragment {
-
-    View v;
     private RecyclerView mRecyclerView;
-    private RecyclerViewAdapter recyclerViewAdapter;
-    private List<DeskItem> mItems;
+    private RecyclerViewAdapter recyclerViewAdapter;    // Желательно придерживаться одного правила
+    private List<DeskItem> mItems;                      // именования полей - с префиксом или без
 
     public FragmentDesk() {
     }
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.desk_fragment,container,false);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.desk_fragment, container,false);
 
-        mRecyclerView = (RecyclerView) v.findViewById(R.id.desk_recycler_view);
+        mRecyclerView = view.findViewById(R.id.desk_recycler_view);
         mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
 
-        return v;
+        return view;
     }
-
 
     public void updateUI(List<DeskItem> deskItems){
         mItems = deskItems;
-        recyclerViewAdapter = new RecyclerViewAdapter(getContext(),mItems);
+        recyclerViewAdapter = new RecyclerViewAdapter(getContext(), mItems);
         mRecyclerView.setAdapter(recyclerViewAdapter);
     }
 

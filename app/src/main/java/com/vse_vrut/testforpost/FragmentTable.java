@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class FragmentTable extends Fragment {
+    // Замечания аналогичны замечаниям в FragmentTeams.
 
     View v;
 

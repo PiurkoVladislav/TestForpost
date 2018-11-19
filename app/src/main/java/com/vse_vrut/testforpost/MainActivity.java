@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Не хватает пробелов между аргументами + многие строки выходят за пределы поля
+        // В таких случаях лучше использовать перенос.
         switch (item.getItemId()) {
             case R.id.cleaner:
                 mDeskItems.add(new DeskItem(getString(R.string.cleaner),getString(R.string.details),R.drawable.print_cleaner));

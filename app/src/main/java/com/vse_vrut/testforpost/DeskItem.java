@@ -1,14 +1,13 @@
 package com.vse_vrut.testforpost;
 
 public class DeskItem {
-
-    private String title;
-    private String detalis;
+    private String title;       // Желательно придерживаться одного правила
+    private String details;     // именования полей - с префиксом или без
     private int image;
 
-    public DeskItem(String title, String detalis, int image) {
+    public DeskItem(String title, String details, int image) {
         this.title = title;
-        this.detalis = detalis;
+        this.details = details;
         this.image = image;
     }
 
@@ -20,12 +19,12 @@ public class DeskItem {
         this.title = title;
     }
 
-    public String getDetalis() {
-        return detalis;
+    public String getDetails() {
+        return details;
     }
 
-    public void setDetalis(String detalis) {
-        this.detalis = detalis;
+    public void setDetails(String details) {
+        this.details = details;
     }
 
     public int getImage() {
@@ -35,4 +34,5 @@ public class DeskItem {
     public void setImage(int image) {
         this.image = image;
     }
+
 }
