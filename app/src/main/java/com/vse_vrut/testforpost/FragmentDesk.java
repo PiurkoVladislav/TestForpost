@@ -17,7 +17,7 @@ public class FragmentDesk extends Fragment {
     private RecyclerViewAdapter recyclerViewAdapter;    // Желательно придерживаться одного правила
     private List<DeskItem> mItems;                      // именования полей - с префиксом или без
 
-    public FragmentDesk() {
+    public FragmentDesk() {                         // Пустой конструктор
     }
 
     @Nullable
@@ -32,6 +32,12 @@ public class FragmentDesk extends Fragment {
         return view;
     }
 
+    // Создавать адаптер каждый раз излишне, можно добавить в адаптер метод
+    // update(List<DeskItem> elements), внутри которого сохранять ссылку на список и вызывать
+    // notifyDataSetChanged(), что вызовет полную перерисовку списка.
+    //
+    // Метод обновляет только список элементов, так что возможно стоит переименовать его в
+    // updateList?
     public void updateUI(List<DeskItem> deskItems){
         mItems = deskItems;
         recyclerViewAdapter = new RecyclerViewAdapter(getContext(), mItems);
